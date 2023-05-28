@@ -21,6 +21,7 @@ const clientSecret = revealObfuscatedToken(apiConfig.obfuscatedClientSecret)
  */
 export function encodePath(path: string): string {
   let encodedPath = pathPosix.join(basePath, path)
+  console.log(encodedPath)
   if (encodedPath === '/' || encodedPath === '') {
     return ''
   }
